@@ -13,16 +13,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="px-20 pt-10">
+    <header>
       <!-- Navbar -->
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+      <nav class="px-20 pt-10">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-[#1DD100] font-bold text-xl bg-[#1DD1001A] border border-lime-400 px-7"
+              >Bus <span><img src="images/bus-icon.png" alt="" /></span
+            ></a>
+          </div>
         </div>
-        <div class="navbar-end">
-          <a class="btn text-[#1DD100] font-bold text-xl bg-[#1DD1001A] border border-lime-400 px-7">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+      </nav>
+      <!-- Banner Section -->
+      <section class="px-20 pt-7">
+        <div
+          class="hero min-h-screen"
+          style="
+            background-image: url(images/banner.png);
+          "
+        >
+          <div class=""></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-full">
+              <h1 class="mb-5 text-6xl font-extrabold">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+              <p class="mb-5 text-xl">
+                Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </header>
     <main></main>
     <footer></footer>
