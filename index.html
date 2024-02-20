@@ -51,7 +51,7 @@
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button
+              <button id="buyTicket"
                 class="btn bg-[#1DD100] rounded-xl px-7 border-none font-bold text-xl"
               >
                 Buy Tickets
@@ -92,10 +92,58 @@
         </div>
       </section>
       <!-- Offer Button -->
-      <section>
+      <section class="pb-20">
         <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg flex justify-center mx-auto text-[#1DD100] font-bold text-xl bg-white border border-lime-400 px-7">See All Offers</button>
+      </section>
+      <!-- Ticket section -->
+      <section id="ticketSection" class="border-t-2 border-[#1DD100] rounded-[4rem] bg-[#F7F8F8]">
+        <div class="px-20 pt-24 text-center w-3/4 mx-auto">
+          <h3 class="font-raleway font-bold text-4xl">P.H Paribahan</h3>
+          <p class="font-inter text-[18px] py-8">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+        <!-- Details section -->
+        <div class="px-20 flex gap-20">
+          <!-- Description -->
+          <div class="pt-10 bg-white">
+            <!-- Four larger sections -->
+            <div class="flex gap-80">
+              <!-- Bus and seat section -->
+              <div class="flex gap-4">
+                <img src="images/bus-logo.png" alt="">
+                <div class="w-full">
+                  <h3 class="font-bold font-raleway text-3xl">Greenline Paribahan</h3>
+                <p class="font-inter text-[18px]">Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg flex text-[#1DD100] font-bold text-xl bg-[#1DD10026] border border-lime-400 px-4">
+                  <img src="images/seat-green.png" alt="">
+                  <span>40</span> seats left
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="flex gap-80">
+                <!-- Routes -->
+                <div><p>Route</p></div>
+                <div><h5>Dhaka - Sylhet</h5></div>
+              </div>
+            <div></div>
+            <div></div>
+            </div>
+          </div>
+          <!-- Pricing -->
+          <div class="flex flex-col w-20 items-center">
+            <div><img src="images/fare.png" alt=""></div>
+            <div>
+              <h3>550 Taka</h3>
+              <p>Per Seat</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
