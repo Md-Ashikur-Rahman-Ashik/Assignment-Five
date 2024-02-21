@@ -21,9 +21,38 @@ function changeColor(elementId){
     const selectedButton = document.getElementById(elementId);
     selectedButton.addEventListener("click", function(){
         selectedButton.style.backgroundColor = "#1DD100";
+        
 
-        const seatAvailable = document.getElementById("availableSeat");
-        const seatText = seatAvailable.innerText;
+        function reduceSeat(){
+            let seatAvailable = document.getElementById("availableSeat");
+            let seatText = seatAvailable.innerText;
+            let converted = parseInt(seatText);
+            converted--;
+
+            // Adding restriction to select seat above 4
+            if(converted < 4){
+                selectedButton.style.backgroundColor = "#F7F8F8";
+                return "Error";
+            }
+
+            seatAvailable.innerText = converted;
+        }
+        reduceSeat();
+
+        function addSeat(){
+            let countSeat = document.getElementById("seatCount");
+            let seatText = countSeat.innerText;
+            let converted = parseInt(seatText);
+            converted++;
+
+            // Adding restriction to select seat above 4
+            if(converted > 4){
+                return "Error";
+            }
+
+            countSeat.innerText = converted;
+        }
+        addSeat();
     })
 }
 
