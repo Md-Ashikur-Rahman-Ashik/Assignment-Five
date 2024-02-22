@@ -73,7 +73,7 @@
               <p class="font-medium text-[#03071280]">use by January 2024</p>
             </div>
             <div class="bg-[#FFBF0F] p-12 rounded-3xl font-raleway">
-              <h3 class="font-bold text-3xl font-raleway text-[#030712]">NEW15</h3>
+              <h3 id="firstCoupon" class="font-bold text-3xl font-raleway text-[#030712]">NEW15</h3>
               <p class="font-medium text-xl text-[#03071266]">Coupon Code</p>
             </div>
           </div>
@@ -85,7 +85,7 @@
                 <p class="font-medium text-[#03071280]">use by January 2024</p>
               </div>
               <div class="bg-[#F78C9C] p-12 rounded-3xl font-raleway">
-                <h3 class="font-bold text-3xl text-[#030712]">Couple 20</h3>
+                <h3 class="font-bold text-3xl text-[#030712]" id="secondCoupon">Couple 20</h3>
                 <p class="font-medium text-xl text-[#03071266]">Coupon Code</p>
               </div>
           </div>
@@ -149,7 +149,7 @@
           <div class="flex flex-col w-32 my-auto">
             <div class="w-3/4"><img src="images/fare.png" class="mx-auto" alt=""></div>
             <div>
-              <h3 class="font-raleway font-bold text-3xl">550 Taka</h3>
+              <h3 class="font-raleway font-bold text-3xl"><span id="ticketPrice">550</span> Taka</h3>
               <p class="font-raleway font-semibold text-2xl">Per Seat</p>
             </div>
           </div>
@@ -234,16 +234,15 @@
                     <li class="font-inter font-medium">Class</li>
                     <li class="font-inter font-medium">Price</li>
                   </ul>
-                  <!-- <ul id="modifiedUl" class="flex gap-20 pb-5 pt-5">
-
-                  </ul> -->
+                  <div id="modifiedUl">
+                  </div>
                   <!-- Total Price -->
                   <div class="flex justify-between pt-5 border-t-2 mt-5 font-inter font-medium">
                     <h5>Total Price</h5>
                     <h5>BDT <span id="priceCount">0</span></h5>
                   </div>
-                  <div class="flex justify-between bg-white mt-5 p-2"> 
-                    <input type="text" placeholder="Have any coupon?">
+                  <div id="couponSection" class="flex justify-between bg-white mt-5 p-2"> 
+                    <input type="text" placeholder="Have any coupon?" id="couponAdd">
                     <button id="addCoupon"
                 class="btn bg-[#1DD100] rounded-xl text-white px-4 border-none font-semibold font-inter"
               >
@@ -257,7 +256,7 @@
                 </div>
               </div>
               <div class="pt-5">
-                <button id="finalButton"
+                <button id="finalButton" onclick="my_modal_4.showModal()"
             class="btn bg-[#1DD100] rounded-xl text-white px-4 border-none font-semibold font-inter w-full"
           >
             Next
@@ -270,6 +269,25 @@
             </div>
           </div>
         </section>
+      </section>
+      <section>
+        <!-- Modal Section -->
+        <!-- You can open the modal using ID.showModal() method -->
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <img class="mx-auto" src="images/success.png" alt="">
+    <h3 class="font-bold text-2xl font-roboto text-center pt-2">SUCCESS</h3>
+    <p class="py-4 font-roboto font-medium text-xl">Thank you for Booking Our Bus Seats. 
+      We are working hard to find the best service and deals for you. </p>
+      <p class="font-roboto font-light text-xl text-[#4A4A4A] text-center">Shortly you will find a confirmation in your email.</p>
+    <div class="flex justify-center pt-2">
+      <form method="dialog" class="bg-[#27AE60] rounded-[32px]">
+        <!-- if there is a button, it will close the modal -->
+        <button class="w-full px-16 py-2 text-white">Continue</button>
+      </form>
+    </div>
+  </div>
+</dialog>
       </section>
     </main>
     <footer></footer>
