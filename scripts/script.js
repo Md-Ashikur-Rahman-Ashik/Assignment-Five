@@ -64,3 +64,7 @@ changeColor("B1");
 changeColor("B2");
 changeColor("B3");
 changeColor("B4");
+
+function price(){
+    let element = document.getElementById()
+}
